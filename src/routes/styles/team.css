@@ -1,0 +1,72 @@
+.team-page {
+    font-family: Space Grotesk, sans-serif;
+    margin:0;
+    padding:0;
+}
+
+.team-intro {
+    background-color: #e9ecef;
+    padding:6rem;
+    display:flex;
+}
+
+.team-title {
+    padding-right:4rem;
+    width:50rem;
+}
+
+.team-text {
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 39px;
+    text-align: left;
+}
+
+.team-text-smaller {
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 39px;
+    text-align: left;
+}
+
+.team-text i {
+    font-weight:500;
+}
+
+
+.team-cards {
+    padding-bottom: 5rem;
+}
+
+.team-cards-investment {
+    padding: 5rem 0 4rem 0;
+    background-color: white;
+    color:Black;
+    font-size: 40px;
+    font-weight: 200;
+    line-height: 39px;
+}
+
+.team-card {
+    width:100%;
+    border: none;
+    padding: 1rem 0 1rem 0;
+}
+
+.team-card-img {
+    height:auto;
+}
+
+.team-card-body {
+    text-align:left;
+    font-family: Space Grotesk, sans-serif;
+}
+
+.team-card-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 39px;
+}
+

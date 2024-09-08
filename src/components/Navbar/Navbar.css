@@ -1,0 +1,46 @@
+.dropdown-toggle::after {
+    display: none;
+}
+
+.navbar {
+    position: relative;
+    top:0;
+    left:0;
+    width: 100%;
+    padding:20px;
+    background-color: white;
+    font-family: "Univers", "Helvetica", "sans-serif";
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+
+.logo {
+    width: 100%;
+    height: 60px;
+}
+
+.nav-two {
+    width: 240px;
+    justify-content:end;
+    padding-right: 50px;
+    align-items:center;
+}
+
+.btn {
+    background-color: transparent;
+    border: none;
+    margin-right: 20px;
+    align-items:center;
+}
+
+.fa-magnifying-glass {
+    color: rgba(0, 0, 0, .55);
+    margin-top: 14px;
+}
+
+.nav-link {
+    margin:30px 20px 20px 20px;
+}
+
+  
