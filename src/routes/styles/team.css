@@ -6,13 +6,31 @@
 
 .team-intro {
     background-color: #e9ecef;
-    padding:6rem;
+    padding:6rem 6rem 6rem 4rem;
     display:flex;
 }
 
 .team-title {
     padding-right:4rem;
     width:50rem;
+}
+
+.team-intro-body {
+    display:flex;
+    flex-direction: column;
+    align-items:start;
+}
+
+.team-img {
+    width:30rem;
+    height:auto;
+}
+
+.team-img-caption {
+    font-size: 12px;
+    font-weight: 300;
+    line-height: 39px;
+    text-align: center;
 }
 
 .team-text {
@@ -34,11 +52,7 @@
 }
 
 
-.team-cards {
-    padding-bottom: 5rem;
-}
-
-.team-cards-investment {
+.team-cards-title {
     padding: 5rem 0 4rem 0;
     background-color: white;
     color:Black;
@@ -70,3 +84,11 @@
     line-height: 39px;
 }
 
+.hide {
+    display:none;
+}
+
+.team-card-img:hover + .hide {
+    display:block;
+    background-color:'rgba(0, 0, 0, 0.4)';
+}

@@ -1,10 +1,78 @@
 #main-content {
-    padding: 2rem 4rem;
-    background-color: #e9ecef;
+    padding: 0rem;
     border-radius: .3rem;
     min-height:100vh;
+    font-family: Space Grotesk, sans-serif;
 }
 
 .vision-statement {
+    padding: 2rem 0rem;
+    margin: 0;
+    background-color: #e9ecef;
+}
+
+.vision-statement h4 {
+
+    font-weight: 300;
+    font-style: normal;
+    font-size: 2.2rem;
+    line-height: 3rem;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+
+.vision-statement h4 i {
+    font-weight: 500;
+}
+
+.success-stories {
+    height:80vh;
+    width:100vw;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border: 2px black solid;
+    background-color: white;
+}
+
+.success-stories h4 {
+    font-size:60px;
+}
+
+.next-fund {
+    padding:4rem 0rem;
+}
+
+.next-fund-title {
+    color:white;
+    background:rgba(0,0,56,255);
+    padding:2rem;
+}
+
+.next-fund-title h4 {
     margin:0px;
+    font-size:40px;
+    font-weight: 500;
+}
+
+.next-fund-body {
+    display:flex;
+    flex-direction:row;
+    border-top:2px black solid;
+    background-color: #a7c6eb;
+}
+
+.founders-segment {
+    width:50%;
+    padding: 3rem;
+    text-align:left;
+    border-right:1px black solid;
+}
+
+
+.non-active-segment {
+    width: 50%;
+    padding: 3rem;
+    text-align:left;
+    border-right:1px black solid;
 }
