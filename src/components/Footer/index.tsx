@@ -1,8 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import './footer.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUtensils } from "@fortawesome/free-solid-svg-icons";
 
 const faq = {
 	pathname: '/about',

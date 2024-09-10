@@ -1,4 +1,4 @@
-import React , {Component} from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import { Navbar, Nav, Button, NavDropdown, NavItem} from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
