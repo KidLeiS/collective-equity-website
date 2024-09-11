@@ -3,12 +3,12 @@
     border-radius: .3rem;
     min-height:100vh;
     font-family: Space Grotesk, sans-serif;
+    background-color: #dfeef3;
 }
 
 .vision-statement {
-    padding: 2rem 0rem;
+    padding: 2rem 10rem;
     margin: 0;
-    background-color: #e9ecef;
 }
 
 .vision-statement h4 {
@@ -18,7 +18,7 @@
     font-size: 2.2rem;
     line-height: 3rem;
     letter-spacing: -0.02em;
-    text-align: center;
+    text-align: left;
 }
 
 .vision-statement h4 i {
@@ -30,9 +30,8 @@
     width:100vw;
     display:flex;
     justify-content: center;
-    align-items:center;
-    border: 2px black solid;
-    background-color: white;
+    align-items:start;
+    /* border: 2px black solid; */
 }
 
 .success-stories h4 {
@@ -75,4 +74,38 @@
     padding: 3rem;
     text-align:left;
     border-right:1px black solid;
+}
+
+
+.success-stories-footer {
+    padding:2rem 10rem 0rem 10rem;
+    text-align:left;
+}
+
+
+.success-card {
+    width:100%;
+    border: none;
+}
+
+.success-card-img {
+    height:auto;
+}
+
+.success-card-body {
+    text-align:left;
+    font-family: Space Grotesk, sans-serif;
+    background-color: #dfeef3;
+}
+
+.success-card-name {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 28px;
+    font-weight: 300;
+    line-height: 39px;
+}
+
+.success-col {
+    padding:0rem 0.3rem;
 }

@@ -1,0 +1,29 @@
+.active-nav {
+    padding: 0px 20px;
+    display: none;
+    position: fixed;
+    top:0;
+    border-bottom: 1px solid #a7c6eb;
+    z-index:1;
+}
+
+.-active {
+    display: flex;
+    transform: translate3d(0, 0, 0);
+    top: 0;
+    transition: background-color 150ms linear, transform 250ms ease, top 250ms ease 250ms;
+}
+
+.logo-active {
+    width: 100%;
+    height: 60px;
+    padding: 0em 1.5em;
+}
+
+.nav-link-thin {
+    margin:20px 20px 20px 20px;
+}
+
+.search-btn-thin {
+    padding: 0rem .75rem .6rem .75rem;
+}

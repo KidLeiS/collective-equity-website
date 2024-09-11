@@ -3,16 +3,16 @@ import { Link } from "react-router-dom";
 import { Navbar, Nav, Button, NavDropdown, NavItem} from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
-import "./Navbar.css";
+import "./ActiveNav.css";
 
-function Navigation() {
+function ActiveNav() {
 		return (
-			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary navbarouter">
+			<Navbar collapseOnSelect expand="lg" className="active-nav bg-body-tertiary">
 				{/* <Container fluid className="navAlign">
 					<Row>
 						<Col> */}
 							<Navbar.Brand as={Link} to="/">
-								<img className="logo" src="src/assets/CE_transparent.png"/>
+								<img className="logo-active" src="src/assets/CE_transparent.png"/>
 							</Navbar.Brand>
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 						{/* </Col>
@@ -20,25 +20,25 @@ function Navigation() {
 							<Navbar.Collapse id="basic-navbar-nav">
 								<Nav className="mx-auto">
 									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to ="/Team">Team</Nav.Link>
+										<Nav.Link className="nav-link-thin" as={Link} to ="/Team">Team</Nav.Link>
 									</NavItem>
 									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to="/About">Philosophy</Nav.Link>
+										<Nav.Link className="nav-link-thin" as={Link} to="/About">Philosophy</Nav.Link>
 									</NavItem>
 									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to="/Portfolio">Companies</Nav.Link>
+										<Nav.Link className="nav-link-thin" as={Link} to="/Portfolio">Companies</Nav.Link>
 									</NavItem>
 									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to="/Events">Events</Nav.Link>
+										<Nav.Link className="nav-link-thin" as={Link} to="/Events">Events</Nav.Link>
 									</NavItem>
 								</Nav>
 								<Nav className="nav-two">
 									<NavItem>
-										<Button>
+										<Button className="search-btn-thin">
 											<FontAwesomeIcon icon={faMagnifyingGlass} />
 										</Button>
 									</NavItem>
-									<NavItem className="nav-dropdown-btn-wide">
+									<NavItem>
 											<NavDropdown title={<FontAwesomeIcon icon={faBarsStaggered} />} id="basic-nav-dropdown">
 												<NavDropdown.Item as={Link} to ="/About">Why Collective</NavDropdown.Item>
 												<NavDropdown.Item as={Link} to ="/Team">Our team</NavDropdown.Item>
@@ -55,4 +55,4 @@ function Navigation() {
 	);
 }
 
-export default Navigation;
+export default ActiveNav;

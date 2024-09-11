@@ -1,5 +1,5 @@
 import React from 'react'
-import { Container } from 'react-bootstrap'
+import { Container, Row, Col, Card } from 'react-bootstrap'
 import "./styles/home.css"
 
 
@@ -10,11 +10,64 @@ function Home() {
                     <h4>We <i>create liquidity and diversify risk</i></h4>
                     <h4>so you can focus on building what matters.</h4>
             </Container>
-            <Container className="success-stories">
-                <div>
-                        <h4>Success Stories Placeholder</h4>
-                        <p>We need stories of successful founders, such as Rebel Energy, with a portrait of the Founder and some quote endorsing Collective Equity</p>
-                </div>
+
+            <Container fluid className="success-stories">
+                <Row>
+                        <Col className="success-col">
+                                <Card className="success-card">
+					<Card.Img className="success-card-img" variant="top" src="src/assets/DanHuma.jpg" />
+						<a>
+							<div className="mask hide">
+								Read full bio
+							</div>
+						</a>
+					<Card.Body className="success-card-body">
+						<Card.Title className="success-card-name">Dan Vahdat</Card.Title>
+						<Card.Text className="success-card-position">
+							<i>Huma</i>
+						</Card.Text>
+					</Card.Body>
+				</Card>
+                        </Col>
+                
+                        <Col className="success-col">
+                                <Card className="success-card">
+					<Card.Img className="success-card-img" variant="top" src="src/assets/ChrisStubben.jpg" />
+						<a>
+							<div className="mask hide">
+								Read full bio
+							</div>
+						</a>
+					<Card.Body className="success-card-body">
+						<Card.Title className="success-card-name">Chris Kenning</Card.Title>
+						<Card.Text className="success-card-position">
+							<i>Stubben Edge</i>
+						</Card.Text>
+					</Card.Body>
+				</Card>
+                        </Col>
+
+                        <Col className="success-col">
+                                <Card className="success-card">
+					<Card.Img className="success-card-img" variant="top" src="src/assets/DanRebel.jpg" />
+						<a>
+							<div className="mask hide">
+								Read full bio
+							</div>
+						</a>
+					<Card.Body className="success-card-body">
+						<Card.Title className="success-card-name">Dan Bates</Card.Title>
+						<Card.Text className="success-card-position">
+							<i>Rebel Energy</i>
+						</Card.Text>
+					</Card.Body>
+				</Card>
+                        </Col>
+                </Row>
+            </Container>
+
+            <Container fluid className="success-stories-footer">
+                <h4>Our groundbreaking founders</h4>
             </Container>
             <Container fluid className="next-fund">
                 <div className="next-fund-title">
