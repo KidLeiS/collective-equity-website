@@ -19,12 +19,14 @@ function Navigation() {
 						<Col> */}
 							<Navbar.Collapse id="basic-navbar-nav">
 								<Nav className="mx-auto">
+								<NavItem>
+										<Nav.Link className="nav-link-wide" as={Link} to="/About">Vision + Mission</Nav.Link>
+									</NavItem>
+									
 									<NavItem>
 										<Nav.Link className="nav-link-wide" as={Link} to ="/Team">Team</Nav.Link>
 									</NavItem>
-									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to="/About">Philosophy</Nav.Link>
-									</NavItem>
+									
 									<NavItem>
 										<Nav.Link className="nav-link-wide" as={Link} to="/Portfolio">Companies</Nav.Link>
 									</NavItem>

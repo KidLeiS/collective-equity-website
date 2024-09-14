@@ -20,11 +20,13 @@ function ActiveNav() {
 							<Navbar.Collapse id="basic-navbar-nav">
 								<Nav className="mx-auto">
 									<NavItem>
+										<Nav.Link className="nav-link-thin" as={Link} to="/About">Vision + Mission</Nav.Link>
+									</NavItem>
+									
+									<NavItem>
 										<Nav.Link className="nav-link-thin" as={Link} to ="/Team">Team</Nav.Link>
 									</NavItem>
-									<NavItem>
-										<Nav.Link className="nav-link-thin" as={Link} to="/About">Philosophy</Nav.Link>
-									</NavItem>
+									
 									<NavItem>
 										<Nav.Link className="nav-link-thin" as={Link} to="/Portfolio">Companies</Nav.Link>
 									</NavItem>

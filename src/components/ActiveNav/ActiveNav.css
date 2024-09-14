@@ -3,8 +3,9 @@
     display: none;
     position: fixed;
     top:0;
-    border-bottom: 1px solid #a7c6eb;
+    border-bottom: 1px solid darkgrey;
     z-index:1;
+    background-color: white;
 }
 
 .-active {

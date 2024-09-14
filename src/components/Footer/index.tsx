@@ -20,8 +20,12 @@ function Footer() {
 								</Link>
 							</div>
 							<div className="footer-caption">
-								Funds by Collective Equity Ownership Limited are operated by Khepri Fund Management Limited, who is authorised and regulated by the Financial Conduct Authority (FRN 193171)
+								<p>Funds by Collective Equity Ownership Limited are operated by Khepri Fund Management Limited, who is authorised and regulated by the Financial Conduct Authority (FRN 193171)</p>
+								<br/>
+								<p>London © 2024, Collective Equity Ownership Limited </p>
 							</div>
+
+					
 						</div>
 						<div className="footer-body">
 							<ul className="footer-panel-list">
@@ -61,7 +65,7 @@ function Footer() {
 							
 					</div>
 
-
+				
 
 			</div>
 		</footer>

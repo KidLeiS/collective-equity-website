@@ -1,0 +1,75 @@
+.about-jumbo {
+    background-image: url("src/assets/pattern.png");
+    height:80vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-jumbo img{
+    width:25%;
+    height:auto;
+    margin-bottom: 1.8rem;
+}
+
+.about-jumbo p{
+    color:white;
+    transition-timing-function: ease;
+    transition-duration: 0.9s;
+    transition-delay: 0.112088s;
+    font-size:20px;
+    font-weight:500;
+}
+
+.vis-statement {
+    padding:6rem 15rem;
+    height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-evenly;
+}
+
+.vis-statement h4 {
+    letter-spacing: 0.3px;
+    font-size:20px;
+}
+
+.redefining-secondaries {
+    padding: 4rem 10rem 6rem 10rem;
+}
+
+.redefining-secondaries h3 {
+    font-size:38px;
+    font-weight:500;
+    margin-bottom:4rem;
+}
+
+.redefining-secondaries h4 {
+    font-size:30px;
+    text-align: left;
+}
+
+.redefining-secondaries p {
+    padding-top: 0.3rem;
+    font-size: 18px;
+    text-align:left;
+}
+
+.redefining-secondaries-quote {
+    padding:6rem;
+    text-align:left;
+    background-color:#F0F0F0;
+    color:black;
+}
+
+.redefining-secondaries-quote h1 {
+    font-size:30px;
+    letter-spacing:0.5px;
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.redefining-secondaries-quote p {
+    font-size:20px;
+}
