@@ -16,9 +16,9 @@ import JamesSensat from "../assets/JamesSensat.png";
 import RyanVM from "../assets/RyanVM.png";
 import RishiSafi from "../assets/RishiSafi.jpeg";
 import AaronKindred from "../assets/AaronKindred.png";
-import balls1 from "src/assets/balls1.png";
-import balls2 from "src/assets/balls2.png";
-import balls3 from "src/assets/balls3.png";
+import balls1 from "../assets/balls1.png";
+import balls2 from "../assets/balls2.png";
+import balls3 from "../assets/balls3.png";
 
 import { Bar } from 'react-chartjs-2';
 import {
