@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import {useState} from 'react';
 import { Container, Row, Col, Card, Button } from 'react-bootstrap';
 import "./styles/home.css";
 import { Link } from "react-router-dom";
@@ -198,10 +198,17 @@ function Home() {
                 </Container>
 
                 <Container fluid className="vs-secondaries">
-                        <h2>
-                                Better than Secondaries
-                        </h2>
-                        
+                        <Container className="vs-secondaries-title">
+                                <h2>
+                                        Better than Secondaries
+                                </h2>
+                        </Container>
+
+                        <p>
+                                Collective Equity was born from the experience that founders have had from secondary offerings. For most founders, participating in traditional secondaries is the only way to recognise liquid, material value from their entrepreneur endeavors before an IPO or sale. However, in over 90% of cases today, there are a plethora of detriments to taking a secondaries transaction.
+                        </p>
+
+
 
                 </Container>
                         
