@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 import './footer.css'
+import logoW from "../../assets/logo_white.png"
+import background from "../../assets/pattern.png"
 
 const faq = {
 	pathname: '/about',
@@ -9,13 +11,13 @@ const faq = {
 function Footer() {
 	return (
 		<footer className="footer-container">
-			<div className="footer">
+			<div className="footer" style={{ backgroundImage: `url(${background})` }}>
 				
 					<div className="footer-main">
 						<div className="footer-left">
 							<div className="footer-upper">
 								<Link to="./">
-									<img src='src/assets/logo_white.png'/>
+									<img src={logoW}/>
 								</Link>
 							</div>
 							<div className="footer-caption">

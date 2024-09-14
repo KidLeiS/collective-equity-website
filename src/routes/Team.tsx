@@ -1,5 +1,16 @@
 import { Container, Row, Col, Card} from 'react-bootstrap'
 import "./styles/team.css"
+import Brian from "../assets/Brian.jpg";
+import Mike from "../assets/Mike.jpg";
+import Tristan from "../assets/Tristan.jpeg";
+import Eric from "../assets/Eric.jpeg";
+import Charles from "../assets/Charles.jpg";
+import Guy from "../assets/Guy.jpeg";
+import David from "../assets/David.jpeg";
+import Ornit from "../assets/Ornit.jpeg";
+import Harel from "../assets/Harel.jpeg";
+import Sanjin from "../assets/Sanjin.jpeg";
+import Ziyi from "../assets/Ziyi.jpeg";
 
 function Team() {
 	return (
@@ -20,14 +31,14 @@ function Team() {
 
 			<Container fluid className="team-cards-title">
 
-						Investment
+						Collective Team
 			</Container>
 
 			<Container fluid="lg" className="team-cards">		
 				<Row>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Brian.jpg" />
+							<Card.Img className="team-card-img" variant="top" src={Brian} />
 							<a>
 								<div className="mask hide">
 									Read full bio
@@ -43,7 +54,7 @@ function Team() {
 					</Col>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Mike.jpg" />
+							<Card.Img className="team-card-img" variant="top" src={Mike}/>
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Mike Royston</Card.Title>
 								<Card.Text className="team-card-position">
@@ -54,7 +65,7 @@ function Team() {
 					</Col>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Tristan.jpeg" />
+							<Card.Img className="team-card-img" variant="top" src={Tristan} />
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Tristan Schnegg</Card.Title>
 								<Card.Text className="team-card-position">
@@ -68,7 +79,19 @@ function Team() {
 				<Row>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Eric.jpeg" />
+							<Card.Img className="team-card-img" variant="top" src={David} />
+							<Card.Body className="team-card-body">
+								<Card.Title className="team-card-name">David Carr</Card.Title>
+								<Card.Text className="team-card-position">
+									Chief Compliance Officer
+								</Card.Text>
+							</Card.Body>
+						</Card>
+					</Col>
+					
+					<Col>
+						<Card className="team-card">
+							<Card.Img className="team-card-img" variant="top" src={Eric} />
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Eric Shen</Card.Title>
 								<Card.Text className="team-card-position">
@@ -79,7 +102,7 @@ function Team() {
 					</Col>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Ziyi.jpeg" />
+							<Card.Img className="team-card-img" variant="top" src={Ziyi} />
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Ziyi Yap</Card.Title>
 								<Card.Text className="team-card-position">
@@ -87,8 +110,6 @@ function Team() {
 								</Card.Text>
 							</Card.Body>
 						</Card>
-					</Col>
-					<Col>
 					</Col>
 				</Row>
 			</Container>
@@ -102,7 +123,7 @@ function Team() {
 				<Row>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Ornit.jpeg" />
+							<Card.Img className="team-card-img" variant="top" src={Ornit} />
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Ornit Shinar</Card.Title>
 								<Card.Text className="team-card-position">
@@ -113,7 +134,7 @@ function Team() {
 					</Col>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Harel.jpeg" />
+							<Card.Img className="team-card-img" variant="top" src={Harel} />
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Harel Kodesh</Card.Title>
 								<Card.Text className="team-card-position">
@@ -124,7 +145,7 @@ function Team() {
 					</Col>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Sanjin.jpeg" />
+							<Card.Img className="team-card-img" variant="top" src={Sanjin}/>
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Sanjin Beloberk</Card.Title>
 								<Card.Text className="team-card-position">
@@ -145,18 +166,7 @@ function Team() {
 				<Row>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/David.jpeg" />
-							<Card.Body className="team-card-body">
-								<Card.Title className="team-card-name">David Carr</Card.Title>
-								<Card.Text className="team-card-position">
-									Compliance Officer
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Charles.jpg" />
+							<Card.Img className="team-card-img" variant="top" src={Charles} />
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Charles Nahum</Card.Title>
 								<Card.Text className="team-card-position">
@@ -167,7 +177,7 @@ function Team() {
 					</Col>
 					<Col>
 						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src="src/assets/Guy.jpeg" />
+							<Card.Img className="team-card-img" variant="top" src={Guy} />
 							<Card.Body className="team-card-body">
 								<Card.Title className="team-card-name">Guy Rigby</Card.Title>
 								<Card.Text className="team-card-position">
@@ -175,6 +185,8 @@ function Team() {
 								</Card.Text>
 							</Card.Body>
 						</Card>
+					</Col>
+					<Col>
 					</Col>
 				</Row>
 			</Container>

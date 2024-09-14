@@ -3,6 +3,7 @@ import { Navbar, Nav, Button, NavDropdown, NavItem} from 'react-bootstrap';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBarsStaggered, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
 import "./ActiveNav.css";
+import logoT from "../../assets/CE_transparent.png"
 
 function ActiveNav() {
 		return (
@@ -11,7 +12,7 @@ function ActiveNav() {
 					<Row>
 						<Col> */}
 							<Navbar.Brand as={Link} to="/">
-								<img className="logo-active" src="src/assets/CE_transparent.png"/>
+								<img className="logo-active" src={logoT}/>
 							</Navbar.Brand>
 							<Navbar.Toggle aria-controls="basic-navbar-nav" />
 						{/* </Col>

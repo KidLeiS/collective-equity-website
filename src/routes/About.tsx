@@ -1,11 +1,13 @@
-import {Container} from 'react-bootstrap'
-import "./styles/about.css"
+import {Container} from 'react-bootstrap';
+import "./styles/about.css";
+import logoWhite from '../assets/logo_white.png';
+import background from "../assets/pattern.png";
 
 function About() {
 	return (
 		<Container fluid style={{padding:"0 0 6rem 0",}}>
-			<Container fluid className="about-jumbo">
-				<img src="src/assets/logo_white.png"/>
+			<Container fluid className="about-jumbo" style={{ backgroundImage: `url(${background})` }}>
+				<img src={logoWhite}/>
 				<p>Offering Liquidity and Diversification to Ambitious Founders </p>
 			</Container>
 

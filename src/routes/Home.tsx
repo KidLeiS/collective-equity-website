@@ -6,6 +6,16 @@ import NextFund from "../components/NextFund";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import Carousel from 'react-bootstrap/Carousel';
+import DanHuma from '../assets/DanHuma.jpg';
+import ChrisStubben from "../assets/ChrisStubben.jpg";
+import DanRebel from "../assets/DanRebel.jpg";
+import PaulAcin from "../assets/PaulAcin.jpeg";
+import DarrenCrowdcube from "../assets/DarrenCrowdcube.png";
+import JamesSensat from "../assets/JamesSensat.png";
+import RyanVM from "../assets/RyanVM.png";
+import RishiSafi from "../assets/RishiSafi.jpeg";
+import AaronKindred from "../assets/AaronKindred.png";
+
 
 
 function Home() {
@@ -23,16 +33,16 @@ function Home() {
                                         <Row>
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/DanHuma.jpg" />
+                                                                <Card.Img className="success-card-img" variant="top" src={AaronKindred} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
                                                                                 </div>
                                                                         </a>
                                                                 <Card.Body className="success-card-body">
-                                                                        <Card.Title className="success-card-name">Dan Vahdat</Card.Title>
+                                                                        <Card.Title className="success-card-name">Aaron Simpson</Card.Title>
                                                                         <Card.Text className="success-card-position">
-                                                                                <i>Huma</i>
+                                                                                <i>Kindred</i>
                                                                         </Card.Text>
                                                                 </Card.Body>
                                                         </Card>
@@ -40,7 +50,7 @@ function Home() {
                                         
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/ChrisStubben.jpg" />
+                                                                <Card.Img className="success-card-img" variant="top" src={ChrisStubben} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
@@ -57,7 +67,7 @@ function Home() {
 
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/DanRebel.jpg" />
+                                                                <Card.Img className="success-card-img" variant="top" src={DanRebel} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
@@ -78,7 +88,23 @@ function Home() {
                                         <Row>
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/PaulAcin.jpeg" />
+                                                                <Card.Img className="success-card-img" variant="top" src={DanHuma} />
+                                                                        <a>
+                                                                                <div className="mask hide">
+                                                                                        Read full bio
+                                                                                </div>
+                                                                        </a>
+                                                                <Card.Body className="success-card-body">
+                                                                        <Card.Title className="success-card-name">Dan Vahdat</Card.Title>
+                                                                        <Card.Text className="success-card-position">
+                                                                                <i>Huma</i>
+                                                                        </Card.Text>
+                                                                </Card.Body>
+                                                        </Card>
+                                                </Col>
+                                                <Col className="success-col">
+                                                        <Card className="success-card">
+                                                                <Card.Img className="success-card-img" variant="top" src={PaulAcin} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
@@ -95,7 +121,7 @@ function Home() {
                                         
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/DarrenCrowdcube.png" />
+                                                                <Card.Img className="success-card-img" variant="top" src={DarrenCrowdcube} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
@@ -110,9 +136,13 @@ function Home() {
                                                         </Card>
                                                 </Col>
 
+                                        </Row>
+                                </Carousel.Item>
+                                <Carousel.Item>
+                                        <Row>
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/JamesSensat.png" />
+                                                                <Card.Img className="success-card-img" variant="top" src={JamesSensat} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
@@ -126,13 +156,9 @@ function Home() {
                                                                 </Card.Body>
                                                         </Card>
                                                 </Col>
-                                        </Row>
-                                </Carousel.Item>
-                                <Carousel.Item>
-                                        <Row>
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/RyanVM.png" />
+                                                                <Card.Img className="success-card-img" variant="top" src={RyanVM} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
@@ -149,7 +175,7 @@ function Home() {
                                         
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/RishiSafi.jpeg" />
+                                                                <Card.Img className="success-card-img" variant="top" src={RishiSafi} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
@@ -164,22 +190,7 @@ function Home() {
                                                         </Card>
                                                 </Col>
 
-                                                <Col className="success-col">
-                                                        <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src="src/assets/AaronKindred.png" />
-                                                                        <a>
-                                                                                <div className="mask hide">
-                                                                                        Read full bio
-                                                                                </div>
-                                                                        </a>
-                                                                <Card.Body className="success-card-body">
-                                                                        <Card.Title className="success-card-name">Aaron Simpson</Card.Title>
-                                                                        <Card.Text className="success-card-position">
-                                                                                <i>Kindred</i>
-                                                                        </Card.Text>
-                                                                </Card.Body>
-                                                        </Card>
-                                                </Col>
+                                                
                                         </Row>
                                 </Carousel.Item>
                         </Carousel>
