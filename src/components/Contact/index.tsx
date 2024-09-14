@@ -1,7 +1,7 @@
 import {Container, Form, Button} from 'react-bootstrap';
 import "./contact.css";
 
-import TeamPic from "../assets/Team.jpg";
+import TeamPic from "../../assets/Team.jpg";
 
 function Contact() {
 	return (
