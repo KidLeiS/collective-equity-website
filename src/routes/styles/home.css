@@ -169,7 +169,21 @@
     font-size:14px;
 }
 
+.vs-secondaries {
+    padding:10rem 10rem 5rem 10rem;
+}
 
+.vs-secondaries-title h2 {
+    margin:0 0 2rem 0;
+    font-size:48px;
+    font-weight:500;
+}
+
+.vs-secondaries p {
+    font-size:20px;
+    text-align:left;
+    padding-bottom: 4rem;
+}
 
 
 

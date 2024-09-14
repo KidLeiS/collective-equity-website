@@ -13,6 +13,8 @@
     font-size: 1.1rem;
     font-weight: 400;
     /* box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.1); */
+    z-index:2;
+    background-color: white;
 }
 
 
@@ -42,4 +44,31 @@
 
 .nav-dropdown-btn-wide {
     padding: 0.5em 0 0 0;
+}
+
+.nav-link {
+    color: black !important;
+    font-size:18px;
+}
+
+.-active {
+    padding: 0px 20px !important;
+    display: flex !important;
+    position: fixed !important;
+    border-bottom: 1px solid darkgrey !important;
+}
+
+
+.-active > .logo {
+    width: 100% !important;
+    height: 60px !important;
+    padding: 0em 1.5em !important;
+}
+
+.active > .nav-link-thin {
+    margin:20px 20px 20px 20px !important;
+}
+
+.active > .search-btn-thin {
+    padding: 0rem .75rem .6rem .75rem !important;
 }

@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Navbar from "./components/Navbar/index";
-import ActiveNav from "./components/ActiveNav/index"
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer/index";
 import Contact from "./components/Contact/index";
@@ -14,7 +13,6 @@ import "./App.css";
 function App() {
 	return (
 		<Router>
-			<ActiveNav />
 			<Navbar />
 			<Wrapper>
 				<Routes>

@@ -7,7 +7,7 @@ import logoT from "../../assets/CE_transparent.png"
 
 function Navigation() {
 		return (
-			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary navbarouter">
+			<Navbar collapseOnSelect expand="lg" className="bg-body-tertiary">
 				{/* <Container fluid className="navAlign">
 					<Row>
 						<Col> */}

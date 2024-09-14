@@ -16,6 +16,25 @@ import RyanVM from "../assets/RyanVM.png";
 import RishiSafi from "../assets/RishiSafi.jpeg";
 import AaronKindred from "../assets/AaronKindred.png";
 
+import { Bar } from 'react-chartjs-2';
+import {
+        Chart as ChartJS,
+        CategoryScale,
+        LinearScale,
+        BarElement,
+        Title,
+        Tooltip,
+        Legend,
+} from 'chart.js';
+
+ChartJS.register(
+        CategoryScale,
+        LinearScale,
+        BarElement,
+        Title,
+        Tooltip,
+        Legend
+);
 
 
 function Home() {
@@ -218,6 +237,49 @@ function Home() {
                         <p>
                                 Collective Equity was born from the experience that founders have had from secondary offerings. For most founders, participating in traditional secondaries is the only way to recognise liquid, material value from their entrepreneur endeavors before an IPO or sale. However, in over 90% of cases today, there are a plethora of detriments to taking a secondaries transaction.
                         </p>
+
+                        <Bar options={{
+                                scales: {
+                                        x: {
+                                                stacked: true,
+                                        },
+                                        y: {
+                                                stacked: true,
+                                        },
+                                },
+
+                        }} data={{
+                                labels: ['Underlying value', 'Secondaries', 'Collective Equity'],
+                                datasets: [
+                                        {
+                                                label: 'Equity Value',
+                                                data: [100, 0, 100],
+                                                backgroundColor: 'rgb(53, 162, 235)',
+                                        },
+                                        {
+                                                label: 'Cash',
+                                                data:[0,50,15],
+                                                backgroundColor: 'rgb(75, 192, 192)',
+                                        },
+                                                                                
+                                        {
+                                                label: 'Debt',
+                                                data:[0,0,-20],
+                                                backgroundColor: 'rgb(255, 99, 132)',
+                                        },
+                                        {
+                                                label: 'Discount',
+                                                data:[0,-20,0],
+                                                backgroundColor: 'rgb(245, 134, 150)'
+                                        },
+                                        {
+                                                label: 'Capital Gains Tax',
+                                                data:[0,-30,0],
+                                                backgroundColor: 'rgb(252, 165, 175)'
+                                        }
+
+                                ]
+                        }}/>
 
 
 

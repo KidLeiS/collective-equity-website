@@ -19,23 +19,24 @@ const throttle = (fn, delay) => {
 function scrollListener() {
   // current scroll position
 
+
+
   setTimeout(function() {
     const currentScrollPos = window.scrollY;
 
-    console.log("scroll event");
-    
     if (prevScrollPos > currentScrollPos && currentScrollPos > 150) {
       // user has scrolled up
-      document.querySelector('.active-nav').classList.add('-active');
+      document.querySelector('.navbar').classList.add('-active');
     } else {
       // user has scrolled down
-      document.querySelector('.active-nav').classList.remove('-active');
+      document.querySelector('.navbar').classList.remove('-active');
     }
   
       // update previous scroll position
       prevScrollPos = currentScrollPos
-    }, 100);
+    }, 200);
   
 };
+
 
 window.addEventListener('scroll', throttle(scrollListener, 200));
