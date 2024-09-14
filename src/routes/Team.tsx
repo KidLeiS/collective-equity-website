@@ -11,6 +11,7 @@ import Ornit from "../assets/Ornit.jpeg";
 import Harel from "../assets/Harel.jpeg";
 import Sanjin from "../assets/Sanjin.jpeg";
 import Ziyi from "../assets/Ziyi.jpeg";
+import TeamPic from "../assets/Team.jpg";
 
 function Team() {
 	return (
@@ -23,7 +24,7 @@ function Team() {
 					<h4 className="team-text-smaller">We see the human side of being a founder, and while we're obsessed with offering the best tool for founders to diversify their exposure, we care immensely about the businesses and people we partner with. We foster a collaborative and close-knit community, not just within our team but also with all of our founder partners.</h4>
 					<br/>
 					<br/>
-					<img className="team-img" src="src/assets/Team.jpg"/>
+					<img className="team-img" src={TeamPic}/>
 					<p className="team-img-caption">Mike Royston, Brian Pallas & Tristan Schnegg, Founding Partners at Collective Equity </p>
 				</div>	
 				

@@ -1,6 +1,8 @@
 import {Container, Form, Button} from 'react-bootstrap';
 import "./contact.css";
 
+import TeamPic from "../assets/Team.jpg";
+
 function Contact() {
 	return (
 		<Container fluid className="contact-wrapper">
@@ -13,7 +15,7 @@ function Contact() {
 					<p>Rob O'Donovan, Charlie HR</p>
 				</Container>
 				<Container className="contact-middle-img">
-					<img src="src/assets/Team.jpg"/>
+					<img src={TeamPic}/>
 				</Container>
 				
 			</Container>
