@@ -1,4 +1,3 @@
-import React from "react";
 
 function NextFund(props: { nextFundState: string; }) {
     const nextFundState = props.nextFundState
