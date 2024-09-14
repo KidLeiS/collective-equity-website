@@ -6,6 +6,7 @@ import NextFund from "../components/NextFund";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCaretDown } from '@fortawesome/free-solid-svg-icons';
 import Carousel from 'react-bootstrap/Carousel';
+
 import DanHuma from '../assets/DanHuma.jpg';
 import ChrisStubben from "../assets/ChrisStubben.jpg";
 import DanRebel from "../assets/DanRebel.jpg";
@@ -15,6 +16,9 @@ import JamesSensat from "../assets/JamesSensat.png";
 import RyanVM from "../assets/RyanVM.png";
 import RishiSafi from "../assets/RishiSafi.jpeg";
 import AaronKindred from "../assets/AaronKindred.png";
+import balls1 from "src/assets/balls1.png";
+import balls2 from "src/assets/balls2.png";
+import balls3 from "src/assets/balls3.png";
 
 import { Bar } from 'react-chartjs-2';
 import {
@@ -310,7 +314,7 @@ function Home() {
                                 <Row>
                                         <Col>
                                                 <Card className="mechanism-card">
-                                                        <Card.Img className="mechanism-card-img" variant="top" src="src/assets/balls1.png" />
+                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls1} />
                                                         <Card.Body className="mechanism-card-body">
                                                                 <br/>
                                                                 <Card.Title className="mechanism-card-title">Fund Structure</Card.Title>
@@ -323,7 +327,7 @@ function Home() {
                                         </Col>
                                         <Col>
                                                 <Card className="mechanism-card">
-                                                        <Card.Img className="mechanism-card-img" variant="top" src="src/assets/balls2.png" />
+                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls2} />
                                                         <Card.Body className="mechanism-card-body">
                                                                 <br/>
                                                                 <Card.Title className="mechanism-card-title">Initial Distributions</Card.Title>
@@ -336,7 +340,7 @@ function Home() {
                                         </Col>
                                         <Col>
                                                 <Card className="mechanism-card">
-                                                        <Card.Img className="mechanism-card-img" variant="top" src="src/assets/balls3.png" />
+                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls3} />
                                                         <Card.Body className="mechanism-card-body">
                                                                 <br/>
                                                                 <Card.Title className="mechanism-card-title">Exit Proceeds</Card.Title>
