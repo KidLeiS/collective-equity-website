@@ -22,7 +22,25 @@
     text-align: left;
 }
 
-.vision-statement h4 i {
+.vision-banner {
+    display: flex;
+    flex-wrap: nowrap; 
+    overflow: auto;
+    background-color: #dfeef3;
+}
+
+.vision-banner h4 {
+    flex: 0 0 auto;
+    font-family: BradfordLLWeb-Light, Garamond, serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.vision-banner h4 i {
     font-weight: 500;
 }
 
@@ -174,17 +192,26 @@
 }
 
 .vs-secondaries-title h2 {
-    margin:0 0 2rem 0;
+    margin:0 0 6rem 0;
     font-size:48px;
     font-weight:500;
 }
 
 .vs-secondaries p {
-    font-size:20px;
+    padding-top: 0.3rem;
+    font-size: 20px;
     text-align:left;
-    padding-bottom: 4rem;
 }
 
+.vs-secondaries ol {
+    margin: 0 0 6rem 0;
+    list-style:none;
+}
+
+.vs-secondaries ol li {
+    text-align:left;
+    font-size:20px;
+}
 
 
 .mechanism {

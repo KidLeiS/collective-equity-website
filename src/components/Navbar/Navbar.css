@@ -3,7 +3,7 @@
 }
 
 .navbar {
-    position: relative;
+    position: absolute;
     top:0;
     left:0;
     width: 100%;
@@ -59,16 +59,20 @@
 }
 
 
-.-active > .logo {
+.-active > .navbar-brand > .logo {
     width: 100% !important;
     height: 60px !important;
     padding: 0em 1.5em !important;
 }
 
-.active > .nav-link-thin {
+.-active > .nav-link-wide {
     margin:20px 20px 20px 20px !important;
 }
 
-.active > .search-btn-thin {
+.-active > .search-btn-thin {
     padding: 0rem .75rem .6rem .75rem !important;
+}
+
+.fa-magnifying-glass {
+    color:black;
 }

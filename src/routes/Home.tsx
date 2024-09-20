@@ -14,7 +14,7 @@ import PaulAcin from "../assets/PaulAcin.jpeg";
 import DarrenCrowdcube from "../assets/DarrenCrowdcube.png";
 import JamesSensat from "../assets/JamesSensat.png";
 import RyanVM from "../assets/RyanVM.png";
-import RishiSafi from "../assets/RishiSafi.jpeg";
+import AntonTaster from "../assets/AntonTaster.jpg";
 import AaronKindred from "../assets/AaronKindred.png";
 import balls1 from "../assets/balls1.png";
 import balls2 from "../assets/balls2.png";
@@ -47,8 +47,10 @@ function Home() {
 	return (
 	<Container fluid id="main-content">
                 <Container fluid className="vision-statement">
-                        <h4>We create <i>liquidity and diversification,</i></h4>
-                        <h4>so you can build what matters.</h4>
+                        <h4>Our founders are trailblazers across:</h4>
+                </Container>
+                <Container fluid className="vision-banner">
+                        <h4><h4><i>Tech</i> / Healthcare / <i>Consumer</i> / Financial Services / <i>Energy & Infrastructure</i> / Travel</h4></h4>
                 </Container>
                 <Container fluid className="success-stories">
                         <Carousel>
@@ -161,6 +163,7 @@ function Home() {
 
                                         </Row>
                                 </Carousel.Item>
+
                                 <Carousel.Item>
                                         <Row>
                                                 <Col className="success-col">
@@ -198,16 +201,17 @@ function Home() {
                                         
                                                 <Col className="success-col">
                                                         <Card className="success-card">
-                                                                <Card.Img className="success-card-img" variant="top" src={RishiSafi} />
+                                                                <Card.Img className="success-card-img" variant="top" src={AntonTaster} />
                                                                         <a>
                                                                                 <div className="mask hide">
                                                                                         Read full bio
                                                                                 </div>
                                                                         </a>
                                                                 <Card.Body className="success-card-body">
-                                                                        <Card.Title className="success-card-name">Rishi Stocker</Card.Title>
+                                                                        <Card.Title className="success-card-name">Anton Soullier</Card.Title>
                                                                         <Card.Text className="success-card-position">
-                                                                                <i>Safi</i>
+                                                                                <i>Taster
+                                                                                </i>
                                                                         </Card.Text>
                                                                 </Card.Body>
                                                         </Card>
@@ -234,13 +238,31 @@ function Home() {
                 <Container fluid className="vs-secondaries">
                         <Container className="vs-secondaries-title">
                                 <h2>
-                                        Better than Secondaries
+                                        3x Better than Secondaries
                                 </h2>
                         </Container>
 
                         <p>
-                                Collective Equity was born from the experience that founders have had from secondary offerings. For most founders, participating in traditional secondaries is the only way to recognise liquid, material value from their entrepreneur endeavors before an IPO or sale. However, in over 90% of cases today, there are a plethora of detriments to taking a secondaries transaction.
+                                Collective Equity was born from the experience that founders have had from secondary offerings. For most founders, participating in traditional secondaries has a negative impact to their overall wealth and control within their startup, but it has been the only way to recognise liquid, material value from their entrepreneur endeavors before an IPO or sale.
                         </p>
+
+                        <br/>
+
+                        <p>
+                                Collective Equity offers a superior alternative, which is value-preservative and founder friendly: 
+                        </p>
+                        <ol>
+                                <li>
+                                        <b>1x</b> Retain 100% of your share value in equity, in a diversified portfolio AND a partial cash payout, backed by debt
+                                </li>
+                                <li>
+                                        <b>2x</b> Never takes arbitrary discounts, and doesn't trigger capital gains tax
+                                </li>
+                                <li>
+                                        <b>3x</b> Founders retain their voting rights to shares held in a Collective Equity fund
+                                </li>
+                        </ol>
+                        <br/>
 
                         <Bar options={{
                                 scales: {

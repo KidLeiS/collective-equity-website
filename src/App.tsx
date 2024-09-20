@@ -9,10 +9,12 @@ import Team from "./routes/Team";
 import Events from "./routes/Events";
 import Portfolio from "./routes/Portfolio";
 import "./App.css";
+import {Container} from 'react-bootstrap';
 
 function App() {
 	return (
 		<Router>
+			<Container fluid style={{height:"170px"}}></Container>
 			<Navbar />
 			<Wrapper>
 				<Routes>
