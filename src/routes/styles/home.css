@@ -290,6 +290,8 @@
 
 .curvedArrow img {
     transform: scaleY(-1);
+    width:70px;
+    height:auto;
     
 }
 
