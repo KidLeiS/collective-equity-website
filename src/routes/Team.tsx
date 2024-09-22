@@ -13,9 +13,102 @@ import Sanjin from "../assets/Sanjin.jpeg";
 import Ziyi from "../assets/Ziyi.jpeg";
 import TeamPic from "../assets/Team.jpg";
 
+import CitiVentures from "../assets/CitiVentures.png"
+import Lenovo from "../assets/Lenovo.png"
+import Illusive from "../assets/Illusive.jpg"
+
+import SilverLake from "../assets/SilverLake.png"
+import Dell from "../assets/Dell.png"
+import GE from "../assets/GE.png"
+import Microsoft from "../assets/Microsoft.png"
+
+import Vitruvian from "../assets/Vitruvian.png"
+import Barclays from "../assets/Barclays.png"
+import McKinsey from "../assets/McKinsey.png"
+
+
 function Team() {
 	return (
 		<Container fluid className="team-page">
+
+		<Container fluid className="team-cards-title">
+
+			Our trusted Investment Committee
+		</Container>
+
+		<Container fluid="lg" className="team-cards">		
+			<Row>
+				<Col>
+					<Card className="team-card">
+						<Card.Img className="team-card-img" variant="top" src={Ornit} />
+						<Card.Body className="team-card-body">
+							<Card.Title className="team-card-name">Ornit Shinar</Card.Title>
+							<Card.Text className="team-card-position ornit">
+								<img src={CitiVentures}/>
+								<img src={Lenovo}/>
+								<img src={Illusive}/>
+							</Card.Text>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col xs={8} className="team-profile">
+					<p>A passionate leader, team builder, investor and mentor, Ornit Shinar has spent the past 2 decades fostering successful innovation.  From 2017 to 2023, Ornit Shinar lead Citi Venture's venture investment activities in data analytics & machine learning, cybersecurity, and fintech. As part of her role she also managed Citi Venture's Tel Aviv Accelerator.</p>
+					<br/>
+					<p>Prior to this role, Ornit ran External Innovation and Business Development for Lenovo in Europe. In this capacity she invested in Cloud technologies as well as Artificial Intelligence and biometric authentication. She has also founded and served in managerial roles in several companies.</p>
+					<br/>
+					<p>Ornit has led, co-invested and syndicated deals with financial and strategic investors around the globe her marquee investments include <b>Honeybook</b>, <b>Silverfort</b>, <b>Biocatch (acq.)</b>, <b>Forter</b>, <b>Access Fintech</b>, <b>Sharegain</b>, <b>Fundguard</b>, <b>Illusive (acq.)</b>, <b>Unbound (acq.)</b>, <b>Eigen (acq.)</b>, <b>Elastifile (acq.)</b>, <b>Neura (acq.)</b>, <b>Contguard (acq.)</b>.</p>
+				</Col>
+			</Row>
+			<Row>
+				<Col xs={8} className="team-profile">
+					<p>Harel Kodesh was an Operating Partner at Silver Lake Partners, a global leader in technology investments from 2017 to 2020, where he managed the firm's portfolio companies, taking interim CTO roles at SoFi and Blackhawk Network. Prior to Silver Lake, Harel was responsible for driving the technical strategy behind Predix, GE’s cloud platform for the Industrial Internet, and the applications developed by GE for the industrial sector and was GE Digital’s CTO. In 2015, he was named to GE’s Corporate Executive Council.</p>
+					<br/>
+					<p>Harel has co-founded and served as CEO at Nurego, a spinoff of EMC Corp. At EMC, he acted as Executive VP for Cloud Business Systems and as CEO of Mozy, its wholly-owned subsidiary dedicated to Backup as a Service. From 2003 to 2008, Harel served as Chief Product Officer at Amdocs, transforming the organization from a professional services company to product driven. Harel served for 10 years as a VP in Microsoft’s Information Appliance Division.
+					</p>
+					<br/>
+					<p>Harel has invested in numerous tech businesses over the years, with notable investments including <b>Excelero (acq. by Nvidia)</b>, <b>Applitools (acq. by Thoma Bravo)</b>, <b>Privya.AI</b>, <b>Tokenproof</b>, <b>ShapeCI</b>, <b>Automattic</b>, <b>Veto</b>, <b>Equalum</b>, <b>Hailo</b>, <b>Affogata</b>, and <b>Buildots</b>.</p>
+				</Col>
+				<Col>
+					<Card className="team-card">
+						<Card.Img className="team-card-img" variant="top" src={Harel} />
+						<Card.Body className="team-card-body">
+							<Card.Title className="team-card-name">Harel Kodesh</Card.Title>
+							<Card.Text className="team-card-position">
+								<img className="harelL" src={SilverLake}/>
+								<img className="harelS" src={GE}/>
+								<img className="harelS" src={Dell}/>
+								<img className="harelL" src={Microsoft}/>
+							</Card.Text>
+						</Card.Body>
+					</Card>
+				</Col>
+				
+			</Row>
+			<Row>
+				<Col>
+					<Card className="team-card">
+						<Card.Img className="team-card-img" variant="top" src={Sanjin}/>
+						<Card.Body className="team-card-body">
+							<Card.Title className="team-card-name">Sanjin Beloberk</Card.Title>
+							<Card.Text className="team-card-position sanjin">
+								<img src={Vitruvian}/>
+								<img src={Barclays}/>
+								<img src={McKinsey}/>
+							</Card.Text>
+						</Card.Body>
+					</Card>
+				</Col>
+				<Col xs={8} className="team-profile">
+					<p>Sanjin Beloberk is currently founder and owner of Pexfin, an investment and capital markets firm that specialises in FinTech businesses. He is also a successful entrepreneur, having successfully exited Ecurie25, a luxury car-rental company, in 2011.</p>
+					<br/>
+					<p>Sanjin's experience includes executive-level roles at several firms, including Vitruvian Partners, where he still holds a senior advisory role, and Barclays, where he served as chief operating officer for the financial institutions group and interim head of strategy and operations for new markets. Throughout his career, Sanjin has been a sought-after advisor, bringing his expertise in strategy, operations, and financial institutions to bear on a wide range of challenges. His passion for entrepreneurship and financial innovation has made him a valuable contributor to the fintech industry.</p>
+					<br/>
+					<p>Sanjin serves on the board of directors for Plum Fintech and as an advisor for a range of companies, including HintMD and Dicopay. Sanjin has led, co-invested and syndicated deals across the US and Europe with key investments into <b>One (acq. by Walmart)</b>, <b>HintMD (acq. by Revance)</b>, <b>Plum</b>, <b>Credit Key</b>, <b>Matic</b>, <b>Alpaca</b>, <b>Veem</b>, <b>Aduro</b>, <b>Marqeta</b>, and <b>Enfuce</b>.</p>
+				</Col>
+			</Row>
+		</Container>
+
+
 			<Container fluid className="team-intro">
 				<p className="team-title">Meet the Collective</p>
 				<div className="team-intro-body">
@@ -115,48 +208,6 @@ function Team() {
 				</Row>
 			</Container>
 
-			<Container fluid className="team-cards-title">
-
-						Investment Committee
-			</Container>
-
-			<Container fluid="lg" className="team-cards">		
-				<Row>
-					<Col>
-						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src={Ornit} />
-							<Card.Body className="team-card-body">
-								<Card.Title className="team-card-name">Ornit Shinar</Card.Title>
-								<Card.Text className="team-card-position">
-									Investment Committee
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src={Harel} />
-							<Card.Body className="team-card-body">
-								<Card.Title className="team-card-name">Harel Kodesh</Card.Title>
-								<Card.Text className="team-card-position">
-									Investment Committee
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-					<Col>
-						<Card className="team-card">
-							<Card.Img className="team-card-img" variant="top" src={Sanjin}/>
-							<Card.Body className="team-card-body">
-								<Card.Title className="team-card-name">Sanjin Beloberk</Card.Title>
-								<Card.Text className="team-card-position">
-									Investment Committee
-								</Card.Text>
-							</Card.Body>
-						</Card>
-					</Col>
-				</Row>
-			</Container>
 
 			<Container fluid className="team-cards-title">
 

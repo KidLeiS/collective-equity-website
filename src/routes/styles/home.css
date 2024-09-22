@@ -7,8 +7,9 @@
 }
 
 .vision-statement {
-    padding: 2rem 10rem;
+    padding: 2rem 10rem 0rem 10rem;
     margin: 0;
+    /* background-color: #dfeef3; */
 }
 
 .vision-statement h4 {
@@ -27,6 +28,7 @@
     flex-wrap: nowrap; 
     overflow: auto;
     background-color: #dfeef3;
+    padding: 1rem;
 }
 
 .vision-banner h4 {
@@ -43,6 +45,45 @@
 .vision-banner h4 i {
     font-weight: 500;
 }
+
+.past-disclaimer {
+    text-align:left;
+    padding-top:2rem;
+}
+
+.past-disclaimer p {
+    margin: 0;
+    font-size: 12px;
+}
+
+.past-disclaimer p b{
+    font-weight:600;
+}
+
+.what-we-do {
+    margin: 0;
+    padding: 5rem 25rem 2rem 10rem;
+    text-align:left;
+    height: 60vh;
+    /* background-image: url("src/assets/pattern.png"); */
+    /* background-color: #ffecd9; */
+    /* color:white; */
+}
+
+.what-we-do h1 {
+    font-family: "Univers", "Helvetica", "sans-serif";
+    font-style: bold;
+    font-size: 3.5rem;
+    line-height: 4rem;
+    letter-spacing: 0.01rem;
+    text-align: left;
+}
+
+.what-we-do p {
+    width:50%;
+}
+
+
 
 .success-stories {
     height:80vh;
@@ -215,7 +256,7 @@
 
 
 .mechanism {
-    padding:10rem 0 5rem 0;
+    padding:3rem 0 5rem 0;
 }
 
 .mechanism h2 {
@@ -245,4 +286,15 @@
     font-size: 20px;
     font-weight:600;
     line-height: 39px;
+}
+
+.curvedArrow img {
+    transform: scaleY(-1);
+    
+}
+
+.curvedArrow {
+    position: relative;
+    top: -30vw;
+    left: 20px;
 }

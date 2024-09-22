@@ -19,8 +19,10 @@ import AaronKindred from "../assets/AaronKindred.png";
 import balls1 from "../assets/balls1.png";
 import balls2 from "../assets/balls2.png";
 import balls3 from "../assets/balls3.png";
+import curvedArrow from "../assets/curveArrow.png";
 
 import { Bar } from 'react-chartjs-2';
+import ChartDataLabels from 'chartjs-plugin-datalabels';
 import {
         Chart as ChartJS,
         CategoryScale,
@@ -42,15 +44,23 @@ ChartJS.register(
 
 
 function Home() {
-        const [nextFund, setNextFund] = useState("none");
+        const [nextFund, setNextFund] = useState("founder");
 
 	return (
 	<Container fluid id="main-content">
+                <Container fluid className="what-we-do">
+                        <h1>We are the founder diversification & liquidity fund</h1>
+                        <br/>
+                        <p>Collective Equity offers high performing founders the opportunity to invest into other high performing startups & receive partial liquidity, in exchange for a small part of your equity stake.</p>
+                </Container>
                 <Container fluid className="vision-statement">
                         <h4>Our founders are trailblazers across:</h4>
                 </Container>
                 <Container fluid className="vision-banner">
-                        <h4><h4><i>Tech</i> / Healthcare / <i>Consumer</i> / Financial Services / <i>Energy & Infrastructure</i> / Travel</h4></h4>
+                        <h4><i>AI & ML</i> / HealthTech / <i>Consumer</i> / FinTech / <i>Energy & Infrastructure</i> / FemTech / <i>RestaurantTech</i> / TravelTech</h4>
+                </Container>
+                <Container fluid className="past-disclaimer">
+                        <p>✱✱<b>Past fund composition not representative of future funds</b></p>
                 </Container>
                 <Container fluid className="success-stories">
                         <Carousel>
@@ -227,12 +237,11 @@ function Home() {
                 <Container fluid className="success-stories-footer">
                         <h4>Our philosophy since day one has been to get excellent founders to sit together at the same table. At Collective Equity, we believe in the power of putting exceptional people in one place, all invested in each others success.</h4>
                         <br/>
-                        <Link to="/About">
+                        <Link to="/About" reloadDocument={true}>
                                 <Button className="philosophy-button">
                                         See our Philosophy
                                 </Button>
                         </Link>
-                        <br/>
                 </Container>
 
                 <Container fluid className="vs-secondaries">
@@ -253,7 +262,7 @@ function Home() {
                         </p>
                         <ol>
                                 <li>
-                                        <b>1x</b> Retain 100% of your share value in equity, in a diversified portfolio AND a partial cash payout, backed by debt
+                                        <b>1x</b> Retain 100% of your share value in <b>high growth equity</b>, in a diversified portfolio <b>AND</b> a partial cash payout, backed by debt
                                 </li>
                                 <li>
                                         <b>2x</b> Never takes arbitrary discounts, and doesn't trigger capital gains tax
@@ -262,46 +271,142 @@ function Home() {
                                         <b>3x</b> Founders retain their voting rights to shares held in a Collective Equity fund
                                 </li>
                         </ol>
-                        <br/>
 
-                        <Bar options={{
+                        <Bar className="barChart" plugins={[ChartDataLabels]} options={{
                                 scales: {
                                         x: {
                                                 stacked: true,
+                                                position: "top",
+                                                ticks: {
+                                                        color:"#000000",
+                                                        font: {
+                                                                size: 18,
+                                                                weight: 600,
+                                                        }
+                                                },
                                         },
                                         y: {
                                                 stacked: true,
+                                                ticks: {
+                                                        callback: value => `${value}%`,
+                                                        color:"#000000",
+                                                        stepSize: 30
+                                                        },
+                                                beginAtZero: true,
+                                                min: -60
                                         },
+                                        
+                                },
+                                plugins: {
+                                        title: {
+                                                display: true,
+                                                text: "Value dilution of traditional secondaries vs Collective Equity",
+                                                font: {
+                                                        size: 30,
+                                                        family: 'Space Grotesk, sans-serif',
+                                                        weight: 500
+
+                                                },
+                                                color: '#000000',
+                                                padding: 30,
+                                        },
+                                        legend: {
+                                                display: false,
+                                                position: 'bottom',
+                                        },
+                                        datalabels: {
+                                                
+                                        }
                                 },
 
                         }} data={{
-                                labels: ['Underlying value', 'Secondaries', 'Collective Equity'],
+                                labels: ['Traditional secondaries', 'Collective Equity'],
                                 datasets: [
                                         {
                                                 label: 'Equity Value',
-                                                data: [100, 0, 100],
+                                                data: [0, 100],
                                                 backgroundColor: 'rgb(53, 162, 235)',
+                                                datalabels: {
+                                                        labels: {
+                                                                title: {
+                                                                        color: '#FFFFFF',
+                                                                        formatter: value => value? `Equity Value\n${value}%`: "",
+                                                                        textAlign: 'center',
+                                                                        font: {
+                                                                                lineHeight: 1.5,
+                                                                        }
+                                                                }
+                                                        }
+                                                }
                                         },
                                         {
                                                 label: 'Cash',
-                                                data:[0,50,15],
+                                                data:[50,15],
                                                 backgroundColor: 'rgb(75, 192, 192)',
+                                                datalabels: {
+                                                        labels: {
+                                                                title: {
+                                                                        color: '#FFFFFF',
+                                                                        formatter: value => value? `Cash\n${value}%`: "",
+                                                                        textAlign: 'center',
+                                                                        font: {
+                                                                                lineHeight: 1.2,
+                                                                        }
+                                                                }
+                                                        }
+                                                }
                                         },
                                                                                 
                                         {
                                                 label: 'Debt',
-                                                data:[0,0,-20],
+                                                data:[0,-20],
                                                 backgroundColor: 'rgb(255, 99, 132)',
+                                                datalabels: {
+                                                        labels: {
+                                                                title: {
+                                                                        color: '#FFFFFF',
+                                                                        formatter: value => value? `Debt\n${value}%`: "",
+                                                                        textAlign: 'center',
+                                                                        font: {
+                                                                                lineHeight: 1.2,
+                                                                        }
+                                                                }
+                                                        }
+                                                }
                                         },
                                         {
                                                 label: 'Discount',
-                                                data:[0,-20,0],
-                                                backgroundColor: 'rgb(245, 134, 150)'
+                                                data:[-20,0],
+                                                backgroundColor: 'rgb(245, 134, 150)',
+                                                datalabels: {
+                                                        labels: {
+                                                                title: {
+                                                                        color: '#FFFFFF',
+                                                                        formatter: value => value? `Discount\n${value}%`: "",
+                                                                        textAlign: 'center',
+                                                                        font: {
+                                                                                lineHeight: 1.2,
+                                                                        }
+                                                                }
+                                                        }
+                                                }
                                         },
                                         {
                                                 label: 'Capital Gains Tax',
-                                                data:[0,-30,0],
-                                                backgroundColor: 'rgb(252, 165, 175)'
+                                                data:[-30,0],
+                                                backgroundColor: 'rgb(252, 165, 175)',
+                                                datalabels: {
+                                                        labels: {
+                                                                title: {
+                                                                        color: '#FFFFFF',
+                                                                        formatter: value => value? `Capital Gains Tax\n${value}%`: "",
+                                                                        textAlign: 'center',
+                                                                        font: {
+                                                                                lineHeight: 1.4,
+                                                                        }
+                                                                }
+                                                        }
+                                                }
                                         }
 
                                 ]
@@ -310,7 +415,63 @@ function Home() {
 
 
                 </Container>
+
+                <div className="curvedArrow">
+                        <img src={curvedArrow}/>
+                </div>
                         
+
+                <Container fluid className="mechanism">
+                        <h2>How we select for top founders</h2>
+                        <Container>
+                                <Row>
+                                        <Col>
+                                                <Card className="mechanism-card">
+                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls1} />
+                                                        <Card.Body className="mechanism-card-body">
+                                                                <br/>
+                                                                <Card.Title className="mechanism-card-title">Selective screeners</Card.Title>
+                                                                <br/>
+                                                                <Card.Text className="mechanism-card-text">
+                                                                        Collective Equity identifies fast growing companies who have raised a sizable upround from top tier VCs, within the past 2 years. Less than 5% of VC backed startups in the US & UK meet our basic criteria.
+                                                                </Card.Text>
+                                                        </Card.Body>
+                                                </Card>
+                                        </Col>
+                                        <Col>
+                                                <Card className="mechanism-card">
+                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls2} />
+                                                        <Card.Body className="mechanism-card-body">
+                                                                <br/>
+                                                                <Card.Title className="mechanism-card-title">Rigourous due diligence</Card.Title>
+                                                                <br/>
+                                                                <Card.Text className="mechanism-card-text">
+                                                                        We conduct a comprehensive due diligence of each company, ensuring that each compmany has performed strongly since their last fundraising. On average, we have at least 3 meetings with management and an expert in the industry before taking a company.
+                                                                </Card.Text>
+                                                        </Card.Body>
+                                                </Card>
+                                        </Col>
+                                        <Col>
+                                                <Card className="mechanism-card">
+                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls3} />
+                                                        <Card.Body className="mechanism-card-body">
+                                                                <br/>
+                                                                <Card.Title className="mechanism-card-title">World class investors</Card.Title>
+                                                                <br/>
+                                                                <Card.Text className="mechanism-card-text">
+                                                                        The final company approval is conducted by our IC, which is composed of 3 highly accomplished investors from top funds such as Silverlake, Citi Ventures, and Vitruvian. They have a combined 60+ years in venture and many more years leading successful businesses.
+                                                                </Card.Text>
+                                                        </Card.Body>
+                                                </Card>
+                                        </Col>
+                                </Row>
+                        </Container>
+                        <Link to="/Team" reloadDocument={true}>
+                                <Button className="philosophy-button">
+                                        See our Investment Committee
+                                </Button>
+                        </Link>
+                </Container>
 
                 <Container fluid className="next-fund">
                         <div className="next-fund-title">
@@ -330,55 +491,11 @@ function Home() {
                         <NextFund nextFundState={nextFund}/>
                 </Container>
 
-                <Container fluid className="mechanism">
-                        <h2>How it works</h2>
-                        <Container>
-                                <Row>
-                                        <Col>
-                                                <Card className="mechanism-card">
-                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls1} />
-                                                        <Card.Body className="mechanism-card-body">
-                                                                <br/>
-                                                                <Card.Title className="mechanism-card-title">Fund Structure</Card.Title>
-                                                                <br/>
-                                                                <Card.Text className="mechanism-card-text">
-                                                                        Collective Equity sets up the General Partner (GP) vehicle that manages the distributions of the exits. The shareholders of the portfolio companies contribute the beneficial ownership of their shares to the Fund, to become Limited Partners (LPs) creating the Portfolio.
-                                                                </Card.Text>
-                                                        </Card.Body>
-                                                </Card>
-                                        </Col>
-                                        <Col>
-                                                <Card className="mechanism-card">
-                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls2} />
-                                                        <Card.Body className="mechanism-card-body">
-                                                                <br/>
-                                                                <Card.Title className="mechanism-card-title">Initial Distributions</Card.Title>
-                                                                <br/>
-                                                                <Card.Text className="mechanism-card-text">
-                                                                        The fund takes out a loan against the Portfolio at a 20% LTV ratio. Collective Equity ringfences £50k p.a. over 10 years to cover expenses of the fund. The remaining cash is then distributed to the Limited Partners pro-rata to the market value of their contributions.
-                                                                </Card.Text>
-                                                        </Card.Body>
-                                                </Card>
-                                        </Col>
-                                        <Col>
-                                                <Card className="mechanism-card">
-                                                        <Card.Img className="mechanism-card-img" variant="top" src={balls3} />
-                                                        <Card.Body className="mechanism-card-body">
-                                                                <br/>
-                                                                <Card.Title className="mechanism-card-title">Exit Proceeds</Card.Title>
-                                                                <br/>
-                                                                <Card.Text className="mechanism-card-text">
-                                                                        The principal and interest are repaid from the liquidity events (exits) of the underlying portfolio companies. Once the debt is repaid, the proceeds from liquidity events are distributed pro-rata. Collective Equity participates in 15% of any liquidity distributions through the fund.
-                                                                </Card.Text>
-                                                        </Card.Body>
-                                                </Card>
-                                        </Col>
-                                </Row>
-                        </Container>
-                </Container>
-
 
                 <div className="home-padding-bottom"> 
+                        <br/>
+                        <br/>
+                        <br/>
                         <br/>
                 </div>
         </Container>

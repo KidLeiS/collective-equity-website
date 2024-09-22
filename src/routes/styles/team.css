@@ -7,6 +7,7 @@
 .team-intro {
     background-color: #dfeef3;
     padding:6rem 6rem 6rem 4rem;
+    margin-top: 4rem;
     display:flex;
 }
 
@@ -84,6 +85,33 @@
     line-height: 39px;
 }
 
+.team-card-position {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.ornit img {
+    width: 30%;
+    height:fit-content;
+}
+
+.harelL {
+    width: 35%;
+    height:fit-content;
+}
+
+.harelS {
+    width: 10%;
+    height:fit-content;
+}
+
+.sanjin img {
+    width: 30%;
+    height:fit-content;
+}
+
 .hide {
     display:none;
 }
@@ -91,4 +119,13 @@
 .team-card-img:hover + .hide {
     display:block;
     background-color:'rgba(0, 0, 0, 0.4)';
+}
+
+.team-profile {
+    padding: 2rem;
+    text-align: left;
+}
+
+.team-profile p {
+    font-size: 16px;
 }
