@@ -14,20 +14,23 @@ import {Container} from 'react-bootstrap';
 function App() {
 	return (
 		<Router>
-			<Container fluid style={{height:"170px"}}></Container>
-			<Navbar />
-			<Wrapper>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/home" element={<Home />} />
-					<Route path="/about" element={<About />} />
-					<Route path="/team" element={<Team />} />
-					<Route path="/portfolio" element={<Portfolio />} />
-					<Route path="/events" element={<Events />} />
-				</Routes>
-			</Wrapper>
-			<Contact />
-			<Footer />
+			<div className="everythingWrapper">
+				<Container fluid style={{height:"170px"}}></Container>
+				<Navbar />
+				<Wrapper>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/home" element={<Home />} />
+						<Route path="/about" element={<About />} />
+						<Route path="/team" element={<Team />} />
+						<Route path="/portfolio" element={<Portfolio />} />
+						<Route path="/events" element={<Events />} />
+					</Routes>
+				</Wrapper>
+				<Contact />
+				<Footer />
+			</div>
+			
 		</Router>
 	);
 }
