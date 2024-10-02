@@ -1,5 +1,5 @@
 .team-page {
-    font-family: Space Grotesk, sans-serif;
+    font-family: 'Poppins';
     margin:0;
     padding:0;
 }
@@ -14,6 +14,7 @@
 .team-title {
     padding-right:4rem;
     width:50rem;
+    text-align: left;
 }
 
 .team-intro-body {
@@ -57,10 +58,14 @@
     padding: 5rem 0 4rem 0;
     background-color: white;
     color:Black;
+}
+
+.team-cards-title h2 {
     font-size: 40px;
     font-weight: 200;
     line-height: 39px;
 }
+
 
 .team-card {
     width:100%;
@@ -74,12 +79,12 @@
 
 .team-card-body {
     text-align:left;
-    font-family: Space Grotesk, sans-serif;
+    font-family: 'Poppins';
 }
 
 .team-card-name {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 12px;
     font-size: 28px;
     font-weight: 300;
     line-height: 39px;
@@ -127,5 +132,5 @@
 }
 
 .team-profile p {
-    font-size: 16px;
+    font-size: 18px;
 }

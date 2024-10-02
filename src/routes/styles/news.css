@@ -1,0 +1,63 @@
+.news-wrapper {
+    margin-bottom:10rem;
+}
+
+.news-banner {
+    height:70vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family:'Poppins';
+}
+
+.news-banner h1{
+    
+    font-size:40px;
+}
+
+.news-button {
+    width:180px;
+    height:50px;
+    background-color:#101045;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.news-button p {
+    margin:0;
+}
+
+.news-tiles {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+
+.news-card {
+    width:28%;
+    border:none;
+    text-align:left;
+    font-family:'Poppins';
+}
+
+.news-card-img {
+    width:100%;
+    aspect-ratio: 4/2;
+    object-fit:contain;
+}
+
+.news-card-title {
+
+    font-size: 16px;
+    font-weight:600;
+}
+
+.news-card-text {
+    font-size: 16px;
+}

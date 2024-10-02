@@ -1,0 +1,80 @@
+.fund-overview {
+    display:flex;
+    flex-direction: row;
+    margin-bottom: 10rem;
+}
+
+.fund-selector {
+    width:20%;
+    display:flex;
+    flex-direction: column;
+    align-items: end;
+    border-right: 1px lightgrey solid;
+}
+
+.fund-details {
+    width:75%;
+}
+
+.fund-button {
+    background-color: white;
+    margin-bottom:1rem;
+}
+
+.fund-logo {
+    height:60px;
+    width:auto;
+}
+
+.fund-metrics {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.fund-metrics div h3 {
+    font-size:20px;
+}
+
+.fund-metrics div h1 {
+    padding: 1rem;
+    color: #101045;
+    font-size:40px;
+}
+
+.fund-card {
+    border: none;
+    padding:1rem;
+}
+
+.fund-card-img {
+    width:100%;
+    aspect-ratio: 4/3;
+    object-fit:contain;
+}
+
+.fund-composition {
+    padding-right:3rem;
+}
+
+.fund-wrapper h2 {
+    padding: 2rem 0;
+}
+
+.fund-banner {
+    height:30vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #101045;
+    color:white;
+    margin-bottom:3rem;
+}
+
+.fund-banner h1 {
+    font-family: 'Poppins';
+    font-style: bold;
+    font-size: 3rem;
+    line-height: 3.8rem;
+    letter-spacing: 0.01rem;
+}

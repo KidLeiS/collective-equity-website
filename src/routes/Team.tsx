@@ -33,7 +33,8 @@ function Team() {
 
 		<Container fluid className="team-cards-title">
 
-			Our trusted Investment Committee
+			<h2>Our trusted Investment Committee</h2>
+			<p>60+ years of combined investing experience, 12 exits</p>
 		</Container>
 
 		<Container fluid="lg" className="team-cards">		

@@ -6,7 +6,7 @@ import Contact from "./components/Contact/index";
 import Home from "./routes/Home";
 import About from "./routes/About";
 import Team from "./routes/Team";
-import Events from "./routes/Events";
+import News from "./routes/News";
 import Portfolio from "./routes/Portfolio";
 import "./App.css";
 import {Container} from 'react-bootstrap';
@@ -24,7 +24,7 @@ function App() {
 						<Route path="/about" element={<About />} />
 						<Route path="/team" element={<Team />} />
 						<Route path="/portfolio" element={<Portfolio />} />
-						<Route path="/events" element={<Events />} />
+						<Route path="/news" element={<News />} />
 					</Routes>
 				</Wrapper>
 				<Contact />

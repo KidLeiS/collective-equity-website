@@ -48,17 +48,19 @@ function Home() {
 
 	return (
 	<Container fluid id="main-content">
-                <Container fluid className="what-we-do">
-                        <h1>We are the founder diversification & liquidity fund</h1>
-                        <br/>
-                        <p>Collective Equity offers high performing founders the opportunity to invest into other high performing startups & receive partial liquidity, in exchange for a small part of your equity stake.</p>
-                </Container>
                 <Container fluid className="vision-statement">
-                        <h4>Our founders are trailblazers across:</h4>
+                        <h4>Our founders are trailblazers across</h4>
                 </Container>
                 <Container fluid className="vision-banner">
                         <h4><i>AI & ML</i> / HealthTech / <i>Consumer</i> / FinTech / <i>Energy & Infrastructure</i> / FemTech / <i>RestaurantTech</i> / TravelTech</h4>
                 </Container>
+                <Container fluid className="what-we-do">
+                        <span className="whiteBar"></span>
+                        <h1>We are the founder diversification & liquidity fund</h1>
+                        <br/>
+                        <p>Collective Equity offers high performing founders the opportunity to invest into other high performing startups & receive partial liquidity, in exchange for a small part of your equity stake.</p>
+                </Container>
+
                 <Container fluid className="past-disclaimer">
                         <p>✱✱<b>Past fund composition not representative of future funds</b></p>
                 </Container>
@@ -244,12 +246,14 @@ function Home() {
                         </Link>
                 </Container>
 
-                <Container fluid className="vs-secondaries">
-                        <Container className="vs-secondaries-title">
+                <Container fluid className="vs-secondaries-title">
                                 <h2>
                                         3x Better than Secondaries
                                 </h2>
-                        </Container>
+                </Container>
+
+                <Container fluid className="vs-secondaries">
+                        
 
                         <p>
                                 Collective Equity was born from the experience that founders have had from secondary offerings. For most founders, participating in traditional secondaries has a negative impact to their overall wealth and control within their startup, but it has been the only way to recognise liquid, material value from their entrepreneur endeavors before an IPO or sale.
@@ -485,7 +489,7 @@ function Home() {
                                         <h3>Founders and CXOs <FontAwesomeIcon icon={faCaretDown} /></h3>
                                 </button>
                                 <button onClick={() => (nextFund == "nonactive")? setNextFund("none") : setNextFund("nonactive")} className="non-active-segment">
-                                        <h3>Investors and ex-employees <FontAwesomeIcon icon={faCaretDown} /></h3>
+                                        <h3>Referral programme <FontAwesomeIcon icon={faCaretDown} /></h3>
                                 </button>
                         </div>
                         <NextFund nextFundState={nextFund}/>

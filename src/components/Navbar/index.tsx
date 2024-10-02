@@ -20,18 +20,18 @@ function Navigation() {
 							<Navbar.Collapse id="basic-navbar-nav">
 								<Nav className="mx-auto">
 								<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to="/About">Vision + Mission</Nav.Link>
+										<Nav.Link className="nav-link-wide" as={Link} to="/About" reloadDocument={true}>Vision + Mission</Nav.Link>
 									</NavItem>
 									
 									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to ="/Team">Team</Nav.Link>
+										<Nav.Link className="nav-link-wide" as={Link} to ="/Team" reloadDocument={true}>Team</Nav.Link>
 									</NavItem>
 									
 									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to="/Portfolio">Companies</Nav.Link>
+										<Nav.Link className="nav-link-wide" as={Link} to="/Portfolio" reloadDocument={true}>Companies</Nav.Link>
 									</NavItem>
 									<NavItem>
-										<Nav.Link className="nav-link-wide" as={Link} to="/Events">Events</Nav.Link>
+										<Nav.Link className="nav-link-wide" as={Link} to="/News" reloadDocument={true}>News</Nav.Link>
 									</NavItem>
 								</Nav>
 								<Nav className="nav-two">
@@ -45,14 +45,17 @@ function Navigation() {
 												<NavDropdown.Item as={Link} to ="/About">Why Collective</NavDropdown.Item>
 												<NavDropdown.Item as={Link} to ="/Team">Our team</NavDropdown.Item>
 												<NavDropdown.Item as={Link} to ="/Portfolio">Track record</NavDropdown.Item>
-												<NavDropdown.Item as={Link} to ="/Events">Get connected</NavDropdown.Item>
+												<NavDropdown.Item as={Link} to ="/News">Get connected</NavDropdown.Item>
+												<NavDropdown.Item id='nav-overlay-mask'></NavDropdown.Item>
 											</NavDropdown>
+											
 									</NavItem>
 								</Nav>
 							</Navbar.Collapse>
 						{/* </Col> */}
 					{/* </Row>			 */}
 				{/* </Container> */}
+				{/* <div id='nav-overlay-mask'></div> */}
 			</Navbar>
 	);
 }
